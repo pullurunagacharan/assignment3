@@ -1,0 +1,91 @@
+2. package xyz;
+
+public class xyz {
+    public static void main(String[] args) {
+         int[] intArray = {1, 2, 3, 4, 5};
+
+        System.out.print("Integer Array: ");
+        for (int num : intArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        
+        double[] doubleArray = {1.1, 2.2, 3.3, 4.4, 5.5};
+
+        System.out.print("Double Array: ");
+        for (double num : doubleArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        
+        char[] charArray = {'A', 'B', 'C', 'D', 'E'};
+
+        System.out.print("Char Array: ");
+        for (char character : charArray) {
+            System.out.print(character + " ");
+        }
+        System.out.println();
+    }
+}
+
+3. package abc;
+
+public class Jagged {
+
+	public static void main(String[] args) {
+		
+		int[][]  a=new int[3][];
+		a[0]=new int[4];
+		a[1]=new int[2];
+		a[2]=new int[5];
+		//first row
+		a[0][0]=10;
+		a[0][1]=11;
+		a[0][2]=12;
+		a[0][3]=13;
+		
+		a[1][0]=14;
+		a[1][1]=15;
+		//third row
+		a[2][0]=16;
+		a[2][1]=17;
+		a[2][2]=18;
+
+		a[2][3]=19;
+		a[2][4]=20;
+		System.out.println("jagged array");
+		for(int i=0;i<=2;i++)
+		{
+			for(int j=0;j<=a[i].length-1;j++)
+			{
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+4. package abc;
+public class EvenOddCounter {
+    public static void main(String[] args) {
+        int[] numbers = {2, 5, 8, 10, 13, 6, 17, 4, 22, 9};
+        int evenCount = 0;
+        int oddCount = 0;
+
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+
+        System.out.println("Even numbers: " + evenCount);
+        System.out.println("Odd numbers: " + oddCount);
+    }
+}
+
+5.
